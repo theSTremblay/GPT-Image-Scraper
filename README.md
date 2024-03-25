@@ -1,6 +1,6 @@
 # GPT-Image-Scraper
 
-A robust Image Scraper that leverages OpenAI's GPT Chat Completions to determine the relevant HTML used to Scrape Images from websites. 
+A robust Image Scraper that leverages OpenAI's GPT Chat Completions and Selenium to determine the relevant HTML used to Scrape Images from websites. 
 
 ## Description
 
