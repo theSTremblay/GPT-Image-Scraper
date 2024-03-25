@@ -6,6 +6,8 @@ A robust Image Scraper that leverages OpenAI's GPT Chat Completions and Selenium
 
 Broadly the scraper requires limited knowledge of HTML or CSS so if you code mostly backend REJOICE! 
 
+![Example](img/example1.gif)
+
 There are two areas that require manual input at the start:
 
 ```bash
