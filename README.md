@@ -38,7 +38,10 @@ https://platform.openai.com/docs/quickstart?context=python
 * Try Running from an IDE at first
 * Be aware of the two Inputs at the start of the program one in the terminal and the other in the tkinter popup- after that it should be automated and download the image to webscrapings
 
+## Considerations
 
+* This code leverage OpenAI's API - a paid platform 
+* OpenAI's account and pricing models can be found here: https://openai.com/pricing
 
 ## More-to-Come
 
