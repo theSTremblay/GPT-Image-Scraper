@@ -10,7 +10,7 @@ There are two areas that require manual input at the start:
 
 ```bash
 1: Terminal Input: When you navigate to the URL you are parsing you will need to click on the image and a popup will show you the html of the page- copy this and input it into the input in your terminal or IDE
-2: tKinter GUI Input: Will prompt you to describe the field you want to parse. The fields are optional but tell GPT what to look for more precisely- the better your description the better the output should be- you can play around with it. 
+2: Tkinter GUI Input: Will prompt you to describe the field you want to parse. The fields are optional but tell GPT what to look for more precisely- the better your description the better the output should be- you can play around with it. 
 ```
 TODO: Educational, since the output is not always accurate. Working on testing it on more websites and testing more of the "page turning" functions. Still working on that
 
