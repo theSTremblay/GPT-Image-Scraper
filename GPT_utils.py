@@ -136,15 +136,13 @@ def navigate_and_capture_images(driver, image_selector, next_page_selector, outp
     - output_directory: Directory to save the captured images.
     - max_pages: Maximum number of pages to scrape (for preventing infinite loops); if None, will continue until no more pages are found.
     """
-
     try:
         while True:
             # Check if maximum pages limit is reached
             #if max_pages is not None and page_count >= max_pages:
             #    break
-
-            # Capture and save image from the current page
             page_count = count_png_files(output_directory) + 1
+            # Capture and save image from the current page
             image_path = os.path.join(output_directory, f'image_{page_count}.png')
             image_saved_flag = False
             image_saved_flag = capture_and_save_image(driver, image_selector, image_path)
@@ -194,7 +192,8 @@ def ask_for_url():
 
 def ask_user_for_selectors(driver):
     def submit():
-        nonlocal image_selector, next_page_action, selector_description
+        nonlocal image_selector, next_page_action, selector_description, radio_select
+        radio_select = v.get()
         image_selector = image_input.get()
         if v.get() == 1:
             next_page_action = 'scroll'
@@ -220,7 +219,7 @@ def ask_user_for_selectors(driver):
     selector_list = extract_and_save_last_selectors(driver, selector)
     #element = driver.find_element_by_css_selector(selector)
 
-    image_selector, next_page_action, selector_description = None, None, None
+    image_selector, next_page_action, selector_description, radio_select = None, None, None, None
 
     popup = tk.Toplevel()
     popup.title("Input Selectors")
@@ -250,11 +249,9 @@ def ask_user_for_selectors(driver):
 
     # After popup is destroyed, these variables are filled with user input.
     try:
-        return image_selector, next_page_action, selector_description, v, selector_list
+        return image_selector, next_page_action, selector_description, radio_select, selector_list
     except NameError:  # In case the window is closed without submission
         return None, None, None, None, None
-
-
 
 def navigate_and_grab_html(url, driver):
     # Setup WebDriver
@@ -543,7 +540,7 @@ def scrape_with_user_input(url=None):
             return
         if found_flag is True:
             print("image saved")
-            break
+            #break
 
     # Placeholder for GPT integration and further processing
     print(f"HTML Content Length: {len(html_content)}")
