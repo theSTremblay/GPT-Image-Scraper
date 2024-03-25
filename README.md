@@ -1,15 +1,17 @@
 # GPT-Image-Scraper
 
-A robust Image Scraper that leverages OpenAI's GPT Chat Completions to determine the relevant HTML used to Scrape Images from websites. 
+A robust Image Scraper that leverages OpenAI's GPT Chat Completions and Selenium to determine the relevant HTML and uses it to Scrape Images from websites. 
 
 ## Description
 
 Broadly the scraper requires limited knowledge of HTML or CSS so if you code mostly backend REJOICE! 
 
 There are two areas that require manual input at the start:
-1: When you navigate to the URL you are parsing you will need to click on the image and a popup will show you the html of the page- copy this and input it into the input in your terminal or IDE
-2: A small tKinter GUI will prompt you to describe the field you want to parse. The fields are optional but tell GPT what to look for more precisely- the better your description the better the output should be- you can play around with it. 
 
+```bash
+1: Terminal Input: When you navigate to the URL you are parsing you will need to click on the image and a popup will show you the html of the page- copy this and input it into the input in your terminal or IDE
+2: Tkinter GUI Input: Will prompt you to describe the field you want to parse. The fields are optional but tell GPT what to look for more precisely- the better your description the better the output should be- you can play around with it. 
+```
 TODO: Educational, since the output is not always accurate. Working on testing it on more websites and testing more of the "page turning" functions. Still working on that
 
 ## Getting Started
@@ -33,12 +35,17 @@ pip install requests
 
 https://platform.openai.com/docs/quickstart?context=python
 
+The model I am using by default is gpt-3.5-turbo, there are other models like "gpt-4" you can take from the OpenAI website. 
+
 ### Executing program
 
 * Try Running from an IDE at first
 * Be aware of the two Inputs at the start of the program one in the terminal and the other in the tkinter popup- after that it should be automated and download the image to webscrapings
 
+## Considerations
 
+* This code leverage OpenAI's API - a paid platform 
+* OpenAI's account and pricing models can be found here: https://openai.com/pricing
 
 ## More-to-Come
 
