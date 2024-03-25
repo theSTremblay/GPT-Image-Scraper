@@ -6,6 +6,8 @@ A robust Image Scraper that leverages OpenAI's GPT Chat Completions and Selenium
 
 Broadly the scraper requires limited knowledge of HTML or CSS so if you code mostly backend REJOICE! 
 
+* Here is an example scraping an image header from an nba box score. Go Bucks!
+
 ![Example](img/example1.gif)
 
 There are two areas that require manual input at the start:
