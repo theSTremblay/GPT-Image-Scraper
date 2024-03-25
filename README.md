@@ -35,6 +35,8 @@ pip install requests
 
 https://platform.openai.com/docs/quickstart?context=python
 
+The model I am using by default is gpt-3.5-turbo, there are other models like "gpt-4" you can take from the OpenAI website. 
+
 ### Executing program
 
 * Try Running from an IDE at first
