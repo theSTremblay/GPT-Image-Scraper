@@ -6,7 +6,7 @@ A robust Image Scraper that leverages OpenAI's GPT Chat Completions and Selenium
 
 Broadly the scraper requires limited to no knowledge of HTML or CSS so if you code mostly backend REJOICE! 
 
-* Here is an educational example scraping an image header from an nba box score-this gives an idea of the tkinter window and the popup that will show when you click on an image. Go Bucks!
+* Here is an educational example- Scraping an image header from an nba box score. This gives an idea of the tkinter window and the popup that will show when you click on an image. Go Bucks!
 
 ![Example](img/example1.gif)
 
