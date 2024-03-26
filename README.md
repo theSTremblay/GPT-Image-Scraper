@@ -51,9 +51,10 @@ The model I am using by default is gpt-3.5-turbo, there are other models like "g
 * This code leverage OpenAI's API - a paid platform 
 * OpenAI's account and pricing models can be found here: https://openai.com/pricing
 
-&nbsp;&nbsp; :flushed:	 &nbsp;         If you found any code helpful in the repo, drop a star. Helps out with the jobs
+&nbsp;&nbsp; :flushed:	 &nbsp;         If you found any code helpful in the repo, drop a star sir. Helps out with the jobs sir
 
-:point_right:	 :point_left:	
+
+![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExczh4MzNvcnphNTl1MnBiOXU3eDB4ODRjdWY0eDRiNDNiMHF0MWh6eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bLAyLX9obxrECmqJZ1/giphy.gif)
 
 ## More-to-Come
 
